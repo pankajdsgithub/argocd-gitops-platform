@@ -1,14 +1,11 @@
-# argocd-gitops-platform
+# Argo CD GitOps Platform
 
-Azure portfolio repository for enterprise architecture, cloud transformation, and platform engineering.
+This repository defines GitOps practices for Azure Kubernetes workloads using Argo CD and application promotion through Git as the source of truth.
 
-## Scope
-
-- Azure solution architecture
-- Cloud migration and landing-zone design
-- Platform engineering, GitOps, and Kubernetes
-- Security, governance, and DevSecOps
-
-## Purpose
-
-This repository is intended as a reusable reference and portfolio asset for enterprise Azure delivery.
+```mermaid
+flowchart LR
+    A[Git Repo] --> B[Argo CD]
+    B --> C[AKS Cluster]
+    C --> D[Apps]
+    D --> E[Observability]
+```
